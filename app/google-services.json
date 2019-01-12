@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "52081157407",
+    "firebase_url": "https://lostandfound-7b259.firebaseio.com",
+    "project_id": "lostandfound-7b259",
+    "storage_bucket": "lostandfound-7b259.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52081157407:android:39eaf3bb05133c20",
+        "android_client_info": {
+          "package_name": "edu.duke.compsci290.lostandfound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52081157407-brk7ggm4fj4vpimbu7abjkqm4avgjrmc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.duke.compsci290.lostandfound",
+            "certificate_hash": "8bade359a9b9b5b2cc8d98e2ba95f7c4eace82b9"
+          }
+        },
+        {
+          "client_id": "52081157407-p32flc2g2ul651kqm10m8m3cbi81lllo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.duke.compsci290.lostandfound",
+            "certificate_hash": "1ad0c2f73744a27a47252dbbd6d555dcf97587fe"
+          }
+        },
+        {
+          "client_id": "52081157407-0qu7f2pohhln84mpk83e507hc76g9g75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr9YdOe5S0g2OV-0GIIkbybkm_k2yvZaw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52081157407-0qu7f2pohhln84mpk83e507hc76g9g75.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

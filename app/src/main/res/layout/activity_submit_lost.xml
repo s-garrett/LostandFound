@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/lost_btn"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:background="@drawable/cardlayout"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Lost" />
+
+            <Button
+                android:id="@+id/found_btn"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/cardlayout"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Found" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/enter_item_title"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Item Name"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enter_contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Email or Phone"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/item_type_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:minWidth="70dp"
+            android:popupBackground="@color/colorPrimaryDark"
+            android:visibility="visible" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <Button
+                android:id="@+id/get_location_btn"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:background="@drawable/cardlayout"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:paddingLeft="5dp"
+                android:text="Location" />
+
+            <TextView
+                android:id="@+id/confirm_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <Button
+                android:id="@+id/get_date_btn"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:background="@drawable/cardlayout"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/confirm_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Current Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/image_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/camera_btn"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:background="@drawable/cardlayout"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Camera" />
+
+            <Button
+                android:id="@+id/album_btn"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/cardlayout"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Gallery" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="135dp"
+                android:layout_height="100dp" />
+
+            <EditText
+                android:id="@+id/enter_item_description"
+                android:layout_width="193dp"
+                android:layout_height="100dp"
+                android:hint="Item Description"
+                android:inputType="textMultiLine"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorSecondary"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
